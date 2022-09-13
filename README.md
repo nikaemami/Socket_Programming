@@ -7,9 +7,9 @@ Each message is consisted of 4 parts: **message type, message ID, length,** and 
 
 There are 9 different message types, each with a different **ID**, which enables TCP connections between different messages. 
 
-<img src="images/2.png" width="500" height="500">
+<img src="images/2.png" width="300" height="300">
 
-<img src="images/3.png" width="500" height="41.7">
+<img src="images/3.png" width="300" height="25">
 
 **Length** section indicates the entire length of a message. 
 
