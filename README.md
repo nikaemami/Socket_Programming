@@ -3,7 +3,7 @@ Socket Programming on one **local host** and several **ports**. The clients conn
 
 Each message is consisted of 4 parts: **message type, message ID, length,** and **payload**.
 
-<img src="images/1.png" width="300" height="37.5">
+<img src="images/1.png" width="400" height="50">
 
 There are 9 different message types, each with a different **ID**, which enables TCP connections between different messages. 
 
