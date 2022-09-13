@@ -3,37 +3,37 @@ Socket Programming on one **local host** and several **ports**. The clients conn
 
 Each message is consisted of 4 parts: **message type, message ID, length,** and **payload**.
 
-<img src="images/1.png" width="500" height="62.5">
+<img src="images/1.png" width="300" height="37.5">
 
 There are 9 different message types, each with a different **ID**, which enables TCP connections between different messages. 
 
 <img src="images/2.png" width="300" height="300">
 
-<img src="images/3.png" width="300" height="25">
+<img src="images/3.png" width="300" height="29">
 
 **Length** section indicates the entire length of a message. 
 
 After the client connects to the server, it will send its name through **CONNECT** to the server. The server will send **CONNACK** in respond to that message. 
 
-<img src="images/4.png" width="500" height="125">
+<img src="images/4.png" width="300" height="75">
 
 Each client can ask for a complete list of its users through LIST. Server will send that list to the client through LISTREPLY. 
 
-<img src="images/5.png" width="500" height="125">
+<img src="images/5.png" width="300" height="75">
 
 Each client can send the ID of a user through INFO, and ask for the user's name from the server. The server will answer through INFOREPLY, where the name of the user is stored in the payload section.
 
-<img src="images/6.png" width="500" height="125">
+<img src="images/6.png" width="300" height="75">
 
-<img src="images/7.png" width="500" height="41.7">
+<img src="images/7.png" width="300" height="29">
 
 Client will use SEND to send a message, which contains the ID of the user that the message needs to be sent to, and the content of the message. The server will answer through SENDREPLY.
 
-<img src="images/8.png" width="500" height="187.5">
+<img src="images/8.png" width="300" height="112">
 
 Client will use RECIEVE to recieve the messages that have been sent to it. Server will answer through RECIEVEREPLY. 
 
-<img src="images/9.png" width="500" height="125">
+<img src="images/9.png" width="300" height="75">
 
 EXIT is used to terminate the program.
 
